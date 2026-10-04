@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2652b3, #1e3a8a);
+    color: white;
+        overflow: hidden;
+}
+header {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+/* INPUT */
+.INPT-User{
+    position: absolute;
+    left: 880px;
+    top: 300px;
+
+    width: 230px;
+    height: 46px;
+
+    border:none;
+    border-radius: 6px;
+    outline: none;
+
+    background-color: rgb(0, 7, 24);
+    Color: rgb(253, 250, 250);
+
+    padding-left: 5px;
+
+    z-index: 9999;
+}
+
+.INPT-Pass{
+    position: absolute;
+    left: 880px;
+    top: 355px;
+
+    width: 230px;
+    height: 46px;
+
+
+    border:none;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 5px;
+
+    background-color: rgb(0, 7, 24);
+    Color: rgb(253, 250, 250);
+
+    z-index: 9999;
+}
+
+.INPT-Key{
+    position: absolute;
+    left: 880px;
+    top: 410px;
+
+    width: 230px;
+    height: 46px;
+
+
+    border:none;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 5px;
+
+    background-color: rgb(0, 7, 24);
+    Color: rgb(253, 250, 250);
+
+    z-index: 9999;
+}
+
+
+
+
+
+/* TEXT */
+.Login2TXT{
+    position: absolute;
+    left: 750px;
+    top: 309px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    Color: rgb(255, 255, 255);
+
+    z-index: 9999;
+}
+.Login3TXT{
+     position: absolute;
+    left: 766px;
+    top: 325px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    Color: rgb(255, 255, 255);
+
+    z-index: 9999;   
+}
+
+
+.PassTXT{
+    position: absolute;
+    left: 748px;
+    top: 360px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    Color: rgb(255, 255, 255);
+
+    z-index: 9999;
+}
+
+
+.KeyTXT{
+    position: absolute;
+    left: 793px;
+    top: 410px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    Color: rgb(255, 255, 255);
+
+    z-index: 9999;
+}
+
+
+
+.LoginTXT{
+    position: fixed;
+    
+    left: 600px;
+    top: 300px;
+
+    width: 1100px;
+    height: 140px;
+
+    font-size: 16px;
+    font-weight: 800; 
+
+    color: rgba(247, 247, 247, 0.616);
+}
+
+
+
+
+
+
+/* BUTTON */
+.LoginBT{
+    position: absolute;
+    left: 910px;
+    top: 540px;
+
+    font-size: 14px;
+    width: 155px;
+    height: 45px;
+
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgba(37, 184, 152, 0.384);
+    color: white;
+
+    z-index: 9999;
+}
+.LoginBT:hover{
+        transition: 0.30s ease-out;
+    background-color: rgba(37, 184, 152, 0.603);
+    cursor: pointer;
+}
+
+.Login2BT{
+    position: absolute;
+    left: 600px;
+    top: 600px;
+
+    font-size: 14px;
+    width: 35px;
+    height: 10px;   
+
+    border:none;
+
+    background-color: rgba(69, 37, 184, 0);
+    color: white;
+
+    text-shadow: 0 0 10px white;
+
+    z-index: 9999;
+}
+.Login2BT:hover{
+    transition: 0.2s ease-out;
+    color: rgba(255, 255, 255, 0.39);  
+    text-shadow: 0 0 10px rgb(9, 226, 255);
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+/* CHECK */
+.check {
+
+    position: absolute;
+    left: 1080px;
+    top: 367px;
+
+    display: inline-flex;
+    align-items: center;
+
+
+    cursor: pointer;
+    user-select: none;
+
+    z-index: 9999;
+}
+.check input[type="checkbox"] {
+    display: none;
+}
+.check-box {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #555;
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+}
+.check-box svg {
+    width: 15px;
+    height: 15px;
+
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    opacity: 0;
+    transform: scale(0.5);
+
+    transition: 0.2s ease;
+}
+.check input:checked + .check-box {
+    border-color: #25eb50;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
+}
+
+
+
+
+
+/* <DIV> */
+.quadradoL {
+    position: absolute;
+
+    position: absolute;
+
+    left: 580px;
+    top: 286px;
+    width: 800px;
+    height: 350px;
+
+    border-radius: 8px;
+
+    border: 2px solid rgba(248, 255, 253, 0.089);
+    box-shadow: 0 0 10px rgba(151, 133, 255, 0.432);
+}
+.quadrado {
+    position: fixed;
+    left: 580px;
+    top: 286px;
+    width: 800px;
+    height: 350px;
+
+    border-radius: 8px;
+
+    background: rgba(0, 0, 0, 0.623);
+}
+
+.ln1 {
+    position: fixed;
+    left: 840px;
+    top: 293px;
+
+    width: 1px;
+    height: 165px;
+
+    background-color: rgb(49, 49, 49);
+}
+
+
+
+
+
+/* FOTO */
+.BackGround{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    width: 1920px;
+    height: 1080px;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+#loading {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 999999;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+#loading.loaded {
+    opacity: 0;
+}
